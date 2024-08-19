@@ -11,14 +11,31 @@ import { getMe, deleteBook } from '../utils/API';
 import Auth from '../utils/auth';
 import { removeBookId } from '../utils/localStorage';
 
+//importing the useQuery() Hook to execute the GET_ME query
+import { useQuery } from '@apollo/client';
+import { QUERY_ME } from '../utils/queries';
+
+//imporing use mutation
+import { useMutation } from '@apollo/client';
 const SavedBooks = () => {
   const [userData, setUserData] = useState({});
 
   // use this to determine if `useEffect()` hook needs to run again
   const userDataLength = Object.keys(userData).length;
 
-  useEffect(() => {
+
+  //Remove the useEffect() Hook that sets the state for UserData.
+  //instead use the useQuery() Hook to execute the GET_ME query on load and save it to a variable named userData.
+  useQuery(() => {
     const getUserData = async () => {
+
+
+        // ASI SE HACE LA INSTRUCCIÓN DE ARRIBA? QUE TENGO QUE MODIFICAR 
+        //EN LO QUE RESTA DEL CODIGO??
+      // const { loading, data } = useQuery(QUERY_ME);
+
+    
+
       try {
         const token = Auth.loggedIn() ? Auth.getToken() : null;
 
