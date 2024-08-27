@@ -46,4 +46,11 @@ Follow the Render documentation to deploy your application.
 
 ## Links
 url to git repo: https://github.com/Gabrielasiu/MERN-search-engine
+
 url to rendered app: https://mern-search-engine-0kz3.onrender.com/
+
+## Screenshot
+
+![image](https://github.com/user-attachments/assets/d8700be5-98ed-41e6-bc3c-8a03eb427a85)
+![image](https://github.com/user-attachments/assets/c01a354a-c391-41b1-b701-635f4d258013)
+
